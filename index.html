@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search for element</title>
+
+    <!-- daisyUI link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-4">
+    <header>
+        <div>
+            <h1 class="text-center mt-3 font-bold text-2xl text-cyan-500">welcome to my product hunter!!!</h1>
+        </div>
+        <div class="form-control w-full max-w-xs m-auto my-7">
+            <label class="label">
+                <span class="label-text">Search your product</span>
+                <span class="label-text-alt">Press <kbd class="kbd kbd-xs">enter</kbd></span>
+            </label>
+            <input id="search-field" type="text" placeholder="Search here"
+                class="input input-bordered w-full max-w-xs" />
+        </div>
+        <section>
+            <div id="not-found">
+
+            </div>
+        </section>
+    </header>
+
+
+
+    <main class="container">
+        <section>
+            <div class="flex">
+                <div class="flex-none ">
+                    <ul class="menu  bg-primary text-secondary-content rounded-box" id="search-product">
+                        <!-- <li><a></a></li>
+                        <li><a></a></li>
+                        <li><a></a></li>
+                        <li><a></a></li> -->
+                    </ul>
+                </div>
+                <div id="product-container" class="grow grid grid-cols-4 gap-4 ms-3">
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+    <div class="modal">
+        <div class="modal-box relative">
+            <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+            <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
+            <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!
+            </p>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
